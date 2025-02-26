@@ -6,8 +6,9 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "lint": "eslint src",
-    "format": "prettier --write src"
+    "lint": "eslint src", 
+    "format": "prettier --write src",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "n8n",
@@ -16,7 +17,7 @@
     "url",
     "thread"
   ],
-  "author": "Your Name",
+  "author": "Jeremy Dawes <jeremy@jezweb.net>",
   "license": "MIT",
   "dependencies": {
     "n8n-workflow": "^1.0.0"
@@ -30,5 +31,11 @@
   "devDependencies": {
     "@types/node": "^16.11.10",
     "typescript": "~4.5.5"
-  }
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ]
 }
