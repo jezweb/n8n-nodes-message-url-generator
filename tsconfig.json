@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "lib": ["es2019", "es2020", "es2021"],
+    "lib": ["es2019", "es2020", "es2021", "dom"],
     "module": "commonjs",
     "target": "es2019",
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "./dist/",
     "esModuleInterop": true,
-    "strict": true,
+    "resolveJsonModule": true,
+    "strict": false,
     "declaration": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
+  "include": ["nodes/**/*", "credentials/**/*"],
   "exclude": ["node_modules/**/*", "**/*.spec.ts"]
 }

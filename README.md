@@ -11,17 +11,31 @@ This is a simple n8n community node that generates message and thread URLs based
 
 ## Installation
 
-Follow these steps to install this community node:
+### Method 1: Install directly from GitHub
 
 1. Go to **Settings > Community Nodes**
 2. Select **Install**
-3. Enter `n8n-nodes-message-url-generator` in **Enter npm package name**
+3. Enter `jezweb/n8n-nodes-message-url-generator` in **Enter npm package name**
 4. Click **Install**
 
-Alternatively, you can install it directly from the command line:
+Alternatively, you can install it directly from the command line using the GitHub repository URL:
 
 ```bash
-npm install n8n-nodes-message-url-generator -g
+npm install -g github:jezweb/n8n-nodes-message-url-generator
+```
+
+Or in your n8n installation directory:
+
+```bash
+npm install github:jezweb/n8n-nodes-message-url-generator
+```
+
+### Method 2: Install from npm (Not available yet)
+
+Once the package is published to npm, you can install it with:
+
+```bash
+npm install -g n8n-nodes-message-url-generator
 ```
 
 ## Usage
